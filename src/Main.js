@@ -3,6 +3,7 @@ import Books from './Books';
 
 class Main extends Component {
   render(){
+
     return(
         <div className="list-books">
           <div className="list-books-title">
@@ -17,9 +18,6 @@ class Main extends Component {
                     <li>
                       <Books/>
                     </li>
-                    <li>
-                      <Books/>
-                    </li>
                   </ol>
                 </div>
               </div>
@@ -30,9 +28,6 @@ class Main extends Component {
                     <li>
                       <Books/>
                     </li>
-                    <li>
-                      <Books/>
-                    </li>
                   </ol>
                 </div>
               </div>
@@ -40,12 +35,6 @@ class Main extends Component {
                 <h2 className="bookshelf-title">Read</h2>
                 <div className="bookshelf-books">
                   <ol className="books-grid">
-                    <li>
-                      <Books/>
-                    </li>
-                    <li>
-                      <Books/>
-                    </li>
                     <li>
                       <Books/>
                     </li>
