@@ -11,17 +11,27 @@ class BooksApp extends React.Component {
   componentDidMount(){
     BooksAPI.getAll().then((books) => {
       this.setState(() => ({books}))
-    }
-  )
+    })
   }
+
+  moveShelf = (book,shelf) => {
+    BooksAPI.update(book,shelf);
+
+    BooksAPI.getAll().then((books) => {
+      this.setState(() => ({books}))
+    })
+  }
+
+
+
   render() {
-        console.log(this.state.books);
     return (
       <div className="app">
         <Main
           listbooks={this.state.books}
+          moveShelf={this.moveShelf}
           />
-        <Search/>
+        <Searh/>
       </div>
     )
   }
