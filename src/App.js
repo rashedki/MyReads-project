@@ -32,7 +32,7 @@ class BooksApp extends React.Component {
           moveShelf={this.moveShelf}
           />*/}
         <Search
-          
+          moveShelf={this.moveShelf}
           />
       </div>
     )

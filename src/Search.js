@@ -52,7 +52,7 @@ class Search extends Component{
               <li key={searchBooks.id}>
                 <Books
                   book={searchBooks}
-                  
+                  moveShelf={this.props.moveShelf}
                 />
               </li>
             ))}
