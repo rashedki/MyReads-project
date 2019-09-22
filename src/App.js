@@ -27,11 +27,13 @@ class BooksApp extends React.Component {
   render() {
     return (
       <div className="app">
-        <Main
+        {/*<Main
           listbooks={this.state.books}
           moveShelf={this.moveShelf}
+          />*/}
+        <Search
+          
           />
-        <Searh/>
       </div>
     )
   }
