@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import Books from './Books';
 
 class Main extends Component {
   render(){
-
     return(
         <div className="list-books">
           <div className="list-books-title">
@@ -23,6 +23,7 @@ class Main extends Component {
                             <Books
                               book={book}
                               moveShelf={this.props.moveShelf}
+                              shelfName="currentlyReading"
                             />
                           </li>
                         ))
@@ -42,6 +43,7 @@ class Main extends Component {
                             <Books
                               book={book}
                               moveShelf={this.props.moveShelf}
+                              shelfName="wantToRead"
                             />
                           </li>
                         ))
@@ -61,6 +63,7 @@ class Main extends Component {
                             <Books
                               book={book}
                               moveShelf={this.props.moveShelf}
+                              shelfName="read"
                             />
                           </li>
                       ))
@@ -71,7 +74,9 @@ class Main extends Component {
             </div>
           </div>
           <div className="open-search">
-            <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
+            <Link to="/search">
+              <button>Add a book</button>
+            </Link>
           </div>
         </div>
 
