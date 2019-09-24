@@ -5,7 +5,7 @@
 
  How To run it:
 
-To get started developing right away:
+To get started right away:
 1. Clone or download this project.
 2. Open the Terminal in MAC or the cmd in Windows
 3. Install all project dependencies with (npm install).
