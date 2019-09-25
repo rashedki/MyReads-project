@@ -9,7 +9,8 @@ To get started right away:
 1. Clone or download this project.
 2. Open the Terminal in MAC or the cmd in Windows
 3. Install all project dependencies with (npm install).
-4. Start the development server with (npm start).
+4. Install the Router with (npm install react-router-dom)
+5. Start the development server with (npm start).
 
 This application has two pages:
 * Main Page:
